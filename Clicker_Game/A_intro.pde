@@ -1,6 +1,11 @@
 void intro () {
   // DECORATION
   image(backgroundpic, 0, 0);
+  textSize(50);
+  fill(255, 150, 30);
+  text("THE CLICKER GAME", 170, 230);
+  fill(0);
+  text("THE CLICKER GAME", 167, 233);
 
   // PLAY BUTTON
   fill(255);
