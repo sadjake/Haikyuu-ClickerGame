@@ -31,6 +31,9 @@ AudioPlayer theme, ballbounce;
 // IMAGE VARIABLES
 PImage backgroundpic;
 PImage gameoverpic;
+PImage hinata;
+PImage oikawa;
+PImage optionsbackground;
 
 // FONT
 PFont haikyuu;
@@ -40,6 +43,9 @@ void setup() {
   mode = INTRO;
   backgroundpic = loadImage("mainbackground.jpg");
   gameoverpic = loadImage("gameover.jpg");
+  hinata = loadImage("hinata.png");
+  oikawa = loadImage("oikawa.png");
+  optionsbackground = loadImage("fly.png");
   haikyuu = createFont("haikyuu.ttf", 100);
 
   // target initialization

@@ -1,6 +1,6 @@
 void game () {
   // BACKGROUND
-  background(0, 255, 0);
+  background(0);
 
   // SCORE AND LIVES
   textSize(50);

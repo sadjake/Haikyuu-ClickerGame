@@ -1,5 +1,8 @@
 void pause () {
-  text("paused", 400, 400);
+  fill(255, 150, 30);
+  text("paused", 325, 350);
+  fill(255);
+  text("paused",323,352);
 }
 
 void pauseClicks () {
