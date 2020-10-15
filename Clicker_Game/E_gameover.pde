@@ -11,6 +11,13 @@ void gameover() {
   fill(255);
   text("GAME OVER", 277, 178);
 
+  // HIGHSCORE BUTTON
+  textSize(50);
+  fill(0);
+  text("Highscore: " + highscore, 254, 300);
+  fill(255);
+  text("Highscore: " + highscore, 252, 298);
+
   // RESTART BUTTON
   fill(255);
   stroke(255, 150, 30);

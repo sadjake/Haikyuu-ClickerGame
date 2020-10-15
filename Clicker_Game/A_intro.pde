@@ -40,8 +40,13 @@ void introClicks () {
   if (mouseX > 600 && mouseX < 700 && mouseY > 550 && mouseY < 600)
     mode = OPTIONS;
 
+  x = width/2;
+  y = height/2;
+  d = 100;  
   score = 0;
   lives = 5;
+  vx = random(-3, 4);
+  vy = random(-3, 4);
 }
 
 // background including images and coded pictures

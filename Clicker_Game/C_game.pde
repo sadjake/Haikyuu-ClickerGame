@@ -1,6 +1,7 @@
 void game () {
   // BACKGROUND
-  background(0);
+  background(255);
+  image(court,-100,0,1000,653);
 
   // SCORE AND LIVES
   textSize(50);
@@ -14,7 +15,7 @@ void game () {
   // DISPLAY TARGET 
   strokeWeight(5);
   fill(255);
-  circle(x, y, d);
+  circle(x,y,d);
 
   // PAUSE BUTTON
   stroke(0);
@@ -37,13 +38,17 @@ void game () {
 void gameClicks () {
   if (dist(mouseX, mouseY, x, y) < 50) {
     score = score + 1;
+    vx = vx * 1.1;
+    vy = vy * 1.1;
   } else if (dist(mouseX, mouseY, 100, 100) < 50) {
     mode = PAUSE;
   } else {
     lives = lives -1;
     if (lives == 0) {
       mode = GAMEOVER;
+    } 
+    if (score>highscore) {
+    highscore = score;
     }
   }
 }
-// background including images and coded pictures

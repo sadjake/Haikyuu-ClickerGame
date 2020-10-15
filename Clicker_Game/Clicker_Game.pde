@@ -23,6 +23,7 @@ final int OPTIONS = 5;
 float x, y, d;
 float vx, vy;
 int score, lives;
+int highscore;
 
 // SOUND VARIABLES
 Minim minim;
@@ -34,6 +35,9 @@ PImage gameoverpic;
 PImage hinata;
 PImage oikawa;
 PImage optionsbackground;
+PImage mikasa;
+PImage molten;
+PImage court;
 
 // FONT
 PFont haikyuu;
@@ -46,16 +50,20 @@ void setup() {
   hinata = loadImage("hinata.png");
   oikawa = loadImage("oikawa.png");
   optionsbackground = loadImage("fly.png");
+  mikasa = loadImage("mikasa.png");
+  molten = loadImage("molten.png");
+  court = loadImage("court.jpg");
   haikyuu = createFont("haikyuu.ttf", 100);
 
   // target initialization
   x = width/2;
   y = height/2;
   d = 100;  
-  vx = random(-5, 8);
-  vy = random(-5, 8);
+  vx = random(-3,4);
+  vy = random(-3,4);
   score = 0;
   lives = 5;
+  highscore = 0;
 
   //minim
   minim = new Minim(this);
