@@ -48,5 +48,3 @@ void introClicks () {
   vx = random(-3, 4);
   vy = random(-3, 4);
 }
-
-// background including images and coded pictures

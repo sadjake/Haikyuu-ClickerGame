@@ -14,23 +14,25 @@ void game () {
 
   // DISPLAY TARGET 
   strokeWeight(5);
-  fill(255);
-  circle(x,y,d);
+  fill(indicatorColor);
+  circle(x,y,thickness);
 
   // PAUSE BUTTON
   stroke(0);
   fill(255);
   circle(100, 100, 100);
+  fill(0);
+  text("||",86,119);
 
   // DISPLAY TARGET MOVEMENT
   x = x + vx;
   y = y + vy;
 
   // BOUNCING
-  if (x < d/2 || x > width-d/2) {
+  if (x < thickness/2 || x > width-thickness/2) {
     vx = vx * -1;
   }
-  if (y < d/2 || y > height-d/2) {
+  if (y < thickness/2 || y > height-thickness/2) {
     vy = vy * -1;
   }
 }

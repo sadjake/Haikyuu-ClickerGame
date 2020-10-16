@@ -10,6 +10,12 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
+// COLOUR
+color indicatorColor;
+color blue = color(85,80,255);
+color red = color(255,20,10);
+color white = color(255);
+
 // MODE VARIABLES
 int mode;
 final int INTRO = 0;
@@ -26,6 +32,9 @@ int score, lives;
 int highscore;
 
 // OPTIONS 
+float slider;
+float sliderY;
+float thickness;
 
 // SOUND VARIABLES
 Minim minim;
@@ -37,8 +46,6 @@ PImage gameoverpic;
 PImage hinata;
 PImage oikawa;
 PImage optionsbackground;
-PImage mikasa;
-PImage molten;
 PImage court;
 
 // FONT
@@ -52,8 +59,6 @@ void setup() {
   hinata = loadImage("hinata.png");
   oikawa = loadImage("oikawa.png");
   optionsbackground = loadImage("fly.png");
-  mikasa = loadImage("mikasa.png");
-  molten = loadImage("molten.png");
   court = loadImage("court.jpg");
   haikyuu = createFont("haikyuu.ttf", 100);
 
@@ -66,6 +71,11 @@ void setup() {
   score = 0;
   lives = 5;
   highscore = 0;
+
+  sliderY = 520;
+  thickness = 50;
+  slider = 50;
+  indicatorColor = white;
 
   //minim
   minim = new Minim(this);

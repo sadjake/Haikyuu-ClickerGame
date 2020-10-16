@@ -12,4 +12,6 @@ void mouseReleased () {
   } else if (mode == OPTIONS) {
     optionsClicks();
   }
+
+  controlSlider();
 }
