@@ -1,4 +1,6 @@
 void gameover() {
+  theme.pause();
+  gameover.play();
   image(gameoverpic, -120, 0, 1000, 650);
   textSize(25);
   fill(0);
@@ -33,4 +35,6 @@ void gameover() {
 void gameoverClicks () {
   if (mouseX > 305 && mouseX < 500 && mouseY > 505 && mouseY < 600)
     mode = INTRO;
+    gameover.pause();
+    theme.rewind();
 }

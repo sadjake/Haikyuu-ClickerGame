@@ -38,7 +38,7 @@ float thickness;
 
 // SOUND VARIABLES
 Minim minim;
-AudioPlayer theme, ballbounce;
+AudioPlayer theme, coin, bump, gameover;
 
 // IMAGE VARIABLES
 PImage backgroundpic;
@@ -79,7 +79,10 @@ void setup() {
 
   //minim
   minim = new Minim(this);
-  theme = minim.loadFile("");
+  theme = minim.loadFile("battle.mp3");
+  coin = minim.loadFile("coin.wav");
+  bump = minim.loadFile("bump.wav");
+  gameover = minim.loadFile("frustration.mp3");
 }
 
 void draw () {

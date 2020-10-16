@@ -1,4 +1,7 @@
 void intro () {
+  // theme
+  theme.play();
+  
   // DECORATION
   image(backgroundpic, 0, 0);
   textSize(50);

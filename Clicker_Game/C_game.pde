@@ -40,12 +40,16 @@ void game () {
 void gameClicks () {
   if (dist(mouseX, mouseY, x, y) < 50) {
     score = score + 1;
+    coin.rewind();
+    coin.play();
     vx = vx * 1.1;
     vy = vy * 1.1;
   } else if (dist(mouseX, mouseY, 100, 100) < 50) {
     mode = PAUSE;
   } else {
     lives = lives -1;
+    bump.rewind();
+    bump.play();
     if (lives == 0) {
       mode = GAMEOVER;
     } 
