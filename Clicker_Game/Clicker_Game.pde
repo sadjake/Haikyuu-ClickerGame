@@ -25,6 +25,8 @@ float vx, vy;
 int score, lives;
 int highscore;
 
+// OPTIONS 
+
 // SOUND VARIABLES
 Minim minim;
 AudioPlayer theme, ballbounce;

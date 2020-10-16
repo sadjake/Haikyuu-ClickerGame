@@ -23,7 +23,6 @@ void options() {
 
   // SLIDER
 
-
   // DISPLAY
   fill(255);
   stroke(255, 150, 30);
