@@ -1,7 +1,4 @@
 // Jake Choi
-// Block: 1-1B
-// Programming 11
-// Oct 7 
 
 import ddf.minim.*;
 import ddf.minim.analysis.*;
